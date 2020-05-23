@@ -1,0 +1,28 @@
+.ourmission-section{
+  .testimonial{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  q{
+    font-style:italic;
+    font-size:1.25rem;
+    line-height:1.4;
+    font-weight: normal;
+    text-align: center;
+    display:block;
+    width:1066px;
+  }
+  p{
+    @extend q;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    color:#23395b;
+  }
+  .swiper-container{
+    margin-bottom:100px;
+  }
+  h2{
+    margin-bottom:1rem;
+  }
+}

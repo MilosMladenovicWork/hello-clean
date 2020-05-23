@@ -6,6 +6,7 @@ import Herosection from "../components/herosection"
 import Benefitssection from "../components/benefitssection"
 import Ourmissionsection from "../components/ourmissionsection"
 import Productssection from "../components/productssection"
+import Standoutsection from "../components/standoutsection"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Detailssection from "../components/detailssection"
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Ourmissionsection />
     <Productssection />
     <Detailssection />
+    <Standoutsection />
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

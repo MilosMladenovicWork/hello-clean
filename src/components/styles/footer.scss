@@ -1,0 +1,24 @@
+footer{
+  background-color:#23395b;
+  padding:40px 0 80px;
+  > div{
+    max-width:1400px;
+    margin:auto;
+  }
+  .footer-content{
+    display:flex;
+    justify-content: space-between;
+    .additional-links{
+      a{
+        text-transform: uppercase;
+        display:inline-block;
+        padding:0 10px;
+      }
+    }
+  }
+  color:white;
+  *{
+    color:white;
+  }
+
+}

@@ -25,8 +25,8 @@ function IndexPage(){
       <SEO title="Home" />
       <Herosection menuClicked={mobileMenuClicked}/>
       <Benefitssection menuClicked={mobileMenuClicked}/>
-      <Ourmissionsection />
-      <Productssection />
+      <Ourmissionsection menuClicked={mobileMenuClicked}/>
+      <Productssection menuClicked={mobileMenuClicked}/>
       <Detailssection />
       <Standoutsection />
       <Mobilemenu clicked={mobileMenuClicked} mobileMenuClick={mobileMenuClickHandler}/>

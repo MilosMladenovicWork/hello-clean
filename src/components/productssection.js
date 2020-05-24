@@ -3,9 +3,9 @@ import {Link} from 'gatsby'
 
 import './styles/productssection.scss'
 
-function Productssection(){
+function Productssection({menuClicked}){
   return(
-    <section className='products-section'>
+    <section className={`products-section ${menuClicked && 'mobile-menu-active'}`}>
       <div className='product'>
         <img src={'https://via.placeholder.com/300'} alt='product 1'/>
         <h2>KUB Basic</h2>

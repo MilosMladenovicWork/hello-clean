@@ -7,13 +7,14 @@ import './styles/header.scss'
 import logo from '../images/logo-blue_195x.webp'
 import menuImg from '../images/menu-24px.svg'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, mobileMenuClick, menuClicked }) => (
   <header
     style={{
       background: `white`,
       display:'flex',
       justifyContent:'center'
     }}
+    className={`${menuClicked && 'mobile-menu-active'}`}
   >
     <div
       style={{
@@ -53,10 +54,10 @@ const Header = ({ siteTitle }) => (
         >
           Contact
         </Link>
-        <button className='mobile'>
-          <img src={menuImg} alt='menu' />
-        </button>
       </nav>
+      <button className='mobile' onClick={() => mobileMenuClick()}>
+        <img src={menuImg} alt='menu' />
+      </button>
     </div>
   </header>
 )

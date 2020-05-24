@@ -1,0 +1,43 @@
+@import './utils/media-breakpoints.scss';
+
+.mobile-menu{
+  position:fixed;
+  top:0;
+  left:100vw;
+  width:20vw;
+  height:100vh;
+  background-color:white;
+  display:flex;
+  flex-direction: column;
+  padding:15px;
+  transform:translateX(0vw);
+  transition:0.5s;
+  @media (max-width:$breakpoint-tablet) and (min-width:$breakpoint-mobile){
+    width:30vw;
+  }
+  @media (max-width:$breakpoint-mobile){
+    width:80vw;
+  }
+}
+
+.mobile-menu a{
+  display: inline-block !important;
+  border-bottom:1px solid #23395b;
+  padding:10px 0 15px;
+}
+
+.mobile-menu-active{
+  transform:translateX(-20vw);
+  @media (max-width:$breakpoint-tablet) and (min-width:$breakpoint-mobile){
+    transform:translateX(-30vw);
+  }
+  @media (max-width:$breakpoint-mobile){
+    transform:translateX(-80vw);
+  }
+}
+
+@media (min-width:$breakpoint-mediumdesktop){
+  .mobile-menu{
+    display:none;
+  }
+}

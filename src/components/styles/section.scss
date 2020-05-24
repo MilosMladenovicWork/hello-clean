@@ -1,5 +1,9 @@
 @import './utils/media-breakpoints.scss';
 
+section{
+  transition:0.5s;
+}
+
 section > div{
   max-width:1400px;
   padding:0 30px;

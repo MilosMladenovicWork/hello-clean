@@ -4,9 +4,9 @@ import {Link} from 'gatsby'
 import './styles/section.scss'
 import './styles/herosection.scss'
 
-function Herosection(){
+function Herosection({menuClicked}){
   return(
-    <section className='hero-section'>
+    <section className={`hero-section ${menuClicked && 'mobile-menu-active'}`}>
       <div>
         <div
           style={{

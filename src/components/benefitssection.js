@@ -31,9 +31,9 @@ const benefitsArr = [
   },
 ]
 
-function Benefitssection(){
+function Benefitssection({menuClicked}){
   return(
-    <section className='benefits-section'>
+    <section className={`benefits-section ${menuClicked && 'mobile-menu-active'}`}>
       <div>
         <h2>Discover the benefits</h2>
         <div

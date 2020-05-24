@@ -6,6 +6,7 @@ import './styles/header.scss'
 
 import logo from '../images/logo-blue_195x.webp'
 import menuImg from '../images/menu-24px.svg'
+import closeMenuImg from '../images/close-24px.svg'
 
 const Header = ({ siteTitle, mobileMenuClick, menuClicked }) => (
   <header
@@ -56,7 +57,7 @@ const Header = ({ siteTitle, mobileMenuClick, menuClicked }) => (
         </Link>
       </nav>
       <button className='mobile' onClick={() => mobileMenuClick()}>
-        <img src={menuImg} alt='menu' />
+        <img src={menuClicked ? closeMenuImg : menuImg} alt='menu' />
       </button>
     </div>
   </header>

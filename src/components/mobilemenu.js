@@ -3,13 +3,16 @@ import {Link} from 'gatsby'
 
 import './styles/mobilemenu.scss'
 
-function Mobilemenu({clicked}){
+function Mobilemenu({clicked, mobileMenuClick}){
 
 
 
   return(
-    <nav className={`mobile mobile-menu ${clicked && 'mobile-menu-active'}`}>
+    <nav 
+      className={`mobile mobile-menu ${clicked && 'mobile-menu-active'}`}
+    >
       <Link
+      onClick={() => mobileMenuClick()}
         to="#"
         style={{
           color:'#23395b',
@@ -19,6 +22,7 @@ function Mobilemenu({clicked}){
         About
       </Link>
       <Link
+        onClick={() => mobileMenuClick()}
         to="#"
         style={{
           color:'#23395b',

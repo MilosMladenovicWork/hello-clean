@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 import Layout from "../components/layout"
 import Herosection from "../components/herosection"
@@ -29,7 +29,7 @@ function IndexPage(){
       <Productssection />
       <Detailssection />
       <Standoutsection />
-      <Mobilemenu clicked={mobileMenuClicked}/>
+      <Mobilemenu clicked={mobileMenuClicked} mobileMenuClick={mobileMenuClickHandler}/>
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>

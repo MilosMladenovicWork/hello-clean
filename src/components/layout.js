@@ -25,7 +25,9 @@ const Layout = ({ children, mobileMenuClick, menuClicked }) => {
   `)
 
   return (
-    <>
+    <div 
+      className={`${menuClicked && 'scroll-prevented'}`}
+    >
       <Header 
         siteTitle={data.site.siteMetadata.title} 
         mobileMenuClick={mobileMenuClick}
@@ -39,7 +41,7 @@ const Layout = ({ children, mobileMenuClick, menuClicked }) => {
         <main>{children}</main>
         <Footer/>
       </div>
-    </>
+    </div>
   )
 }
 

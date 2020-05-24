@@ -6,18 +6,14 @@ import './styles/herosection.scss'
 
 function Herosection(){
   return(
-    <section
-      style={{
-        backgroundColor:'#eeeeee'
-      }}
-      className='hero-section'
-    >
+    <section className='hero-section'>
       <div>
         <div
           style={{
             width:'100%',
             display:'flex',
-            justifyContent:'space-between'
+            justifyContent:'space-between',
+            alignItems:'center'
           }}
         >
         <div
@@ -38,8 +34,25 @@ function Herosection(){
           </Link>
           </p>
         </div>
-        <img src={'https://via.placeholder.com/300'}/>
+        <div>
+          <img src={'https://via.placeholder.com/300'}/>
         </div>
+        </div>
+      </div>
+      <div
+        style={{
+          display:'flex',
+          flexDirection:'column',
+          alignItems:'center',
+          marginTop:'40px'
+        }}
+      >
+      <p className='centered mobile'>
+          Enabling healthier environments with a cost-effective, smart & beautifully designed commercial solution<br/>
+          <Link to='#'>
+            Get yours
+          </Link>
+          </p>
       </div>
     </section>
   )

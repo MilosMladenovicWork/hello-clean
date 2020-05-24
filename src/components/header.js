@@ -5,6 +5,7 @@ import React from "react"
 import './styles/header.scss'
 
 import logo from '../images/logo-blue_195x.webp'
+import menuImg from '../images/menu-24px.svg'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -21,7 +22,7 @@ const Header = ({ siteTitle }) => (
         display:`flex`,
         justifyContent:`space-between`,
         alignItems:`center`,
-        padding:`15px 0px 15px`
+        padding:`15px 15px`
       }}
     >
       <Link
@@ -52,6 +53,9 @@ const Header = ({ siteTitle }) => (
         >
           Contact
         </Link>
+        <button className='mobile'>
+          <img src={menuImg} alt='menu' />
+        </button>
       </nav>
     </div>
   </header>

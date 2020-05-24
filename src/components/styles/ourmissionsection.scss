@@ -1,3 +1,5 @@
+@import './utils/media-breakpoints.scss';
+
 .ourmission-section{
   .testimonial{
     display:flex;
@@ -13,6 +15,9 @@
     text-align: center;
     display:block;
     width:1066px;
+    @media (max-width:$breakpoint-tablet){
+      width:90vw;
+    }
   }
   p{
     @extend q;

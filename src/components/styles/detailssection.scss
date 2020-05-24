@@ -1,3 +1,4 @@
+@import './utils/media-breakpoints.scss';
 
 .details-item{
   max-width:unset;
@@ -7,18 +8,42 @@
   flex-direction: row;
   min-height:510px;
   align-items: stretch;
+  @media (max-width:$breakpoint-tablet){
+    flex-direction:column
+  }
   .details-image{
     width:50%;
+    @media (max-width:$breakpoint-tablet){
+      width:100%;
+      height:50vh;
+    }
     img{
       object-fit:cover;
       width:100%;
       height:100%;
       min-height: 510px;
+      @media (max-width:$breakpoint-tablet){
+        min-height:50vh;
+      }
     }
   }
   .details-text{
     width:50%;
     padding:0 95px;
+    @media (max-width:$breakpoint-mediumdesktop) and (min-width:$breakpoint-smalldesktop){
+      padding:0 70px;
+    }
+    @media (max-width:$breakpoint-smalldesktop) and (min-width:$breakpoint-tablet){
+      padding:0 60px;
+    }
+    @media (max-width:$breakpoint-tablet) and (min-width:$breakpoint-mobile){
+      width:100%;
+      padding:0 75px;
+    }
+    @media (max-width:$breakpoint-mobile){
+      width:100%;
+      padding:0 25px;
+    }
     h2{
       text-align: left;
     }
@@ -28,6 +53,7 @@
       padding:0;
       li{
         font-size:1rem;
+        font-weight: 300;
         margin-bottom:20px;
       }
     }
@@ -49,11 +75,17 @@
       border-color:#fb8723;
       color:white;
     }
+    em{
+      font-size:0.875rem;
+    }
   }
   .details-icons{
     display:flex;
     justify-content: center;
     margin:50px 0;
+    @media (max-width:$breakpoint-mobile){
+      transform:scale(0.75);
+    }
     figure{
       margin:0 10px;
       display:flex;
@@ -78,4 +110,10 @@
 
 .centered{
   text-align: center;
+}
+
+@media (max-width:$breakpoint-tablet){
+  .details-item:nth-of-type(2), .details-item:nth-of-type(4){
+    flex-direction: column-reverse;
+  }
 }

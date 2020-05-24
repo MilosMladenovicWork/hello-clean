@@ -11,7 +11,6 @@ function Productssection(){
         <h2>KUB Basic</h2>
         <p>4 batteries D-type (Not included)</p>
         <p>Battery life: 2 years / 50,000 uses</p>
-        <br/>
         <p>Frame: white ceramic-feel finish</p>
         <p>USB cable included Power supply not included</p>
         <p>Smart technology</p>
@@ -32,7 +31,6 @@ function Productssection(){
         <h2>KUB Basic</h2>
         <p>4 batteries D-type (Not included)</p>
         <p>Battery life: 2 years / 50,000 uses</p>
-        <br/>
         <p>Frame: white ceramic-feel finish</p>
         <p>USB cable included Power supply not included</p>
         <p>Smart technology</p>
@@ -53,7 +51,6 @@ function Productssection(){
         <h2>KUB Basic</h2>
         <p>4 batteries D-type (Not included)</p>
         <p>Battery life: 2 years / 50,000 uses</p>
-        <br/>
         <p>Frame: white ceramic-feel finish</p>
         <p>USB cable included Power supply not included</p>
         <p>Smart technology</p>
@@ -74,7 +71,6 @@ function Productssection(){
         <h2>KUB Basic</h2>
         <p>4 batteries D-type (Not included)</p>
         <p>Battery life: 2 years / 50,000 uses</p>
-        <br/>
         <p>Frame: white ceramic-feel finish</p>
         <p>USB cable included Power supply not included</p>
         <p>Smart technology</p>

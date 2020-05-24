@@ -1,6 +1,11 @@
+@import './utils/media-breakpoints.scss';
+
 .benefits-group{
   display:flex;
   flex-direction: row;
+  @media (max-width:$breakpoint-tablet){
+    flex-direction: column;
+  }
   div{
     display:flex;
     flex-direction: column;

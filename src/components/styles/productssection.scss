@@ -1,7 +1,12 @@
+@import './utils/media-breakpoints.scss';
+
 section.products-section{
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
+  @media (max-width:$breakpoint-tablet){
+    flex-direction:column;
+  }
   .product{
     max-width: unset;
     margin:unset;
@@ -10,12 +15,20 @@ section.products-section{
     flex-direction: column;
     align-items: center;
     padding-bottom:70px;
+    @media (max-width:$breakpoint-tablet){
+      width:100%;
+    }
     h2{
       margin:0 0 40px;
     }
     p{
       margin:0 0 25px;
       font-size:1.25rem;
+      text-align: center;
+      @media (max-width:$breakpoint-tablet){
+        font-size:1.125rem;
+        margin:0 0 15px;
+      }
     }
     .minor-info{
       text-align: center;

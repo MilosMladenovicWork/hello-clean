@@ -7,22 +7,8 @@ import './styles/herosection.scss'
 function Herosection({menuClicked}){
   return(
     <section className={`hero-section ${menuClicked && 'mobile-menu-active'}`}>
-      <div>
-        <div
-          style={{
-            width:'100%',
-            display:'flex',
-            justifyContent:'space-between',
-            alignItems:'center'
-          }}
-        >
-        <div
-          style={{
-            display:'flex',
-            flexDirection:'column',
-            justifyContent:'center'
-          }}
-        >
+      <div className='hero-main-content'>
+        <div className='hero-text-container'>
           <h1>Introducing <br/>
               KUB & KUB Premium
           </h1>
@@ -34,25 +20,17 @@ function Herosection({menuClicked}){
           </Link>
           </p>
         </div>
-        <div>
+        <div className='hero-image-container'>
           <img src={'https://via.placeholder.com/300'}/>
         </div>
-        </div>
       </div>
-      <div
-        style={{
-          display:'flex',
-          flexDirection:'column',
-          alignItems:'center',
-          marginTop:'40px'
-        }}
-      >
-      <p className='centered mobile'>
+      <div className='hero-mobile-content-container'>
+        <p className='centered mobile'>
           Enabling healthier environments with a cost-effective, smart & beautifully designed commercial solution<br/>
           <Link to='#'>
             Get yours
           </Link>
-          </p>
+        </p>
       </div>
     </section>
   )

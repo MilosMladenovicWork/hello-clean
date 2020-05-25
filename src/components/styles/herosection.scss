@@ -17,15 +17,16 @@
       justify-content: center;
     }
     .hero-image-container{
-      img{
         height:675px;
+        min-width:675px;
         @media (max-width:$breakpoint-smalldesktop) and (min-width:$breakpoint-tablet){
+          min-width:375px;
           height: 375px;
         }
         @media (max-width:$breakpoint-tablet){
+          min-width:230px;
           height:230px;
         }
-      }
     }
     @media (max-width:$breakpoint-smalldesktop) and (min-width:$breakpoint-tablet){
       min-height: 375px;
@@ -42,10 +43,6 @@
       }
       .hero-image-container{
         align-self: flex-end;
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        width:70%;
       }
       }
   }

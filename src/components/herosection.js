@@ -10,7 +10,7 @@ function Herosection({menuClicked}){
   
   const data = useStaticQuery(graphql`
   query {
-    heroImg:file(relativePath:{eq:"fullhdhero.jpg"}){
+    heroImg:file(relativePath:{eq:"test.png"}){
       childImageSharp{
         fluid(maxWidth:1000){
           ...GatsbyImageSharpFluid
@@ -19,7 +19,6 @@ function Herosection({menuClicked}){
     }
   }
   `)
-  console.log(data)
 
   return(
     <section className={`hero-section ${menuClicked && 'mobile-menu-active'}`}>
@@ -36,14 +35,16 @@ function Herosection({menuClicked}){
           </Link>
           </p>
         </div>
-        <div className='hero-image-container'>
-          <Img 
-            fluid={data.heroImg.childImageSharp.fluid} 
-            style={{
-              overflow:'hidden'
-            }}
-          /> 
-          {/* <img src={'https://via.placeholder.com/300'}/> */}
+        <div className='hero-image-position-container'>
+          <div className='hero-image-container'>
+            <Img 
+              fluid={data.heroImg.childImageSharp.fluid} 
+              style={{
+                overflow:'hidden'
+              }}
+            /> 
+            {/* <img src={'https://via.placeholder.com/300'}/> */}
+          </div>
         </div>
       </div>
       <div className='hero-mobile-content-container'>

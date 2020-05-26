@@ -1,4 +1,6 @@
 import React from 'react'
+import {useStaticQuery, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 
 import './styles/section.scss'
 import './styles/benefitssection.scss'
@@ -32,6 +34,25 @@ const benefitsArr = [
 ]
 
 function Benefitssection({menuClicked}){
+
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    allFile(filter: {relativeDirectory: {eq: "benefits-images"}}) {
+      edges{
+        node{
+          childImageSharp {
+            fixed(width: 44) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+  }
+  `)
+
+  console.log(data)
+
   return(
     <section className={`benefits-section ${menuClicked && 'mobile-menu-active'}`}>
       <div>
@@ -40,7 +61,7 @@ function Benefitssection({menuClicked}){
           className='benefits-group'
         >
          {benefitsArr.map((benefit, index) => <div key={index}>
-           <img src={benefit.img} alt={benefit.heading + ' icon'}/>
+           <Img fixed={data.allFile.edges[index].node.childImageSharp.fixed} alt={benefit.heading + ' icon'}/>
            <h6>{benefit.heading}</h6>
            <p>{benefit.paragraph}</p>
          </div>)}

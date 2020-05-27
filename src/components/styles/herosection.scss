@@ -70,12 +70,18 @@
       background:#23395b;
       border-radius:6px;
       text-transform: uppercase;
+      transition:0.3s;
       @media (max-width:$breakpoint-tablet){
         background: white;
         color:#23395b;
         border:2px solid #23395b;
         font-size:1rem;
       }
+    }
+    a:hover{
+      background-color: #fb8723;
+      border-color:#fb8723;
+      color:white;
     }
   } 
   .hero-mobile-content-container{

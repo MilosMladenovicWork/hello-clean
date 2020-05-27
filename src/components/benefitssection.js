@@ -40,6 +40,7 @@ function Benefitssection({menuClicked}){
     allFile(filter: {relativeDirectory: {eq: "benefits-images"}}) {
       edges{
         node{
+          name
           childImageSharp {
             fixed(width: 44) {
               ...GatsbyImageSharpFixed
@@ -51,7 +52,7 @@ function Benefitssection({menuClicked}){
   }
   `)
 
-  console.log(data)
+  data.allFile.edges.sort((a, b) => Number(a.node.name) - Number(b.node.name))
 
   return(
     <section className={`benefits-section ${menuClicked && 'mobile-menu-active'}`}>

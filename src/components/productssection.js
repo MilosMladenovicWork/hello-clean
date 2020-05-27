@@ -24,7 +24,6 @@ function Productssection({menuClicked}){
   `)
 
   data.allFile.edges.sort((a, b) => Number(a.node.name) - Number(b.node.name))
-  console.log(data)
 
   return(
     <section className={`products-section ${menuClicked && 'mobile-menu-active'}`}>

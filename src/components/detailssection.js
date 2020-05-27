@@ -1,14 +1,47 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import {Link, useStaticQuery, graphql} from 'gatsby'
+import Img from 'gatsby-image'
 
 import './styles/detailssection.scss'
 
 function Detailssection(){
+
+  const data = useStaticQuery(graphql`
+  query {
+    rowMainImages:allFile(filter: {relativeDirectory:{eq: "details-images"}}){
+      edges{
+        node{
+          name
+          childImageSharp{
+            fluid(maxWidth:1000){
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+    benefitsIcons:allFile(filter: {relativeDirectory:{eq:"details-images/second-row-icons"}}){
+      edges{
+        node{
+          name
+          childImageSharp{
+            fixed(width:44){
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+    }
+  }
+  `)
+
+  data.rowMainImages.edges.sort((a, b) => Number(a.node.name) - Number(b.node.name))
+
   return(
     <section className='details-section'>
       <div className='details-item'>
         <div className='details-image'>
-          <img src='https://via.placeholder.com/1000x600' alt='detail 1'/>
+          <Img fluid={data.rowMainImages.edges[0].node.childImageSharp.fluid} />
         </div>
         <div className='details-text'>
           <h2>Low-Maintenance through Smart Technology</h2>
@@ -42,23 +75,23 @@ function Detailssection(){
           </ul>
           <div className='details-icons'>
             <figure>
-              <img src='https://via.placeholder.com/44' alt='icon'/>
+              <Img fixed={data.benefitsIcons.edges[0].node.childImageSharp.fixed}/>
               <figcaption>Fast-absorbing</figcaption>
             </figure>
             <figure>
-              <img src='https://via.placeholder.com/44' alt='icon'/>
+            <Img fixed={data.benefitsIcons.edges[1].node.childImageSharp.fixed}/>
               <figcaption>Fast-absorbing</figcaption>
             </figure>
             <figure>
-              <img src='https://via.placeholder.com/44' alt='icon'/>
+              <Img fixed={data.benefitsIcons.edges[2].node.childImageSharp.fixed}/>
               <figcaption>Fast-absorbing</figcaption>
             </figure>
             <figure>
-              <img src='https://via.placeholder.com/44' alt='icon'/>
+              <Img fixed={data.benefitsIcons.edges[3].node.childImageSharp.fixed}/>
               <figcaption>Fast-absorbing</figcaption>
             </figure>
             <figure>
-              <img src='https://via.placeholder.com/44' alt='icon'/>
+              <Img fixed={data.benefitsIcons.edges[4].node.childImageSharp.fixed}/>
               <figcaption>Fast-absorbing</figcaption>
             </figure>
           </div>
@@ -75,12 +108,12 @@ function Detailssection(){
           </div>
         </div>
         <div className='details-image'>
-          <img src='https://via.placeholder.com/1000x600' alt='detail 1'/>
+          <Img fluid={data.rowMainImages.edges[1].node.childImageSharp.fluid} />
         </div>
       </div>
       <div className='details-item'>
         <div className='details-image'>
-          <img src='https://via.placeholder.com/1000x600' alt='detail 1'/>
+         <Img fluid={data.rowMainImages.edges[2].node.childImageSharp.fluid} />
         </div>
         <div className='details-text'>
           <div
@@ -117,7 +150,7 @@ function Detailssection(){
           </div>
         </div>
         <div className='details-image'>
-          <img src='https://via.placeholder.com/1000x600' alt='detail 1'/>
+          <Img fluid={data.rowMainImages.edges[3].node.childImageSharp.fluid} />
         </div>
       </div>
     </section>

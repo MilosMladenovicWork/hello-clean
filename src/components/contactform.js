@@ -19,7 +19,7 @@ export default class MyForm extends React.Component {
           <h2>Contact Us</h2>
           <form
             onSubmit={this.submitForm}
-            action="https://formspree.io/mlepgogr"
+            action="https://formspree.io/xeqraprg"
             method="POST"
           >
             <div className={status === "SUCCESS" ? 'hidden' : 'shown'}>
@@ -48,6 +48,7 @@ export default class MyForm extends React.Component {
 
   submitForm(ev) {
     ev.preventDefault();
+    this.setState({ status: "ERROR" });
     const form = ev.target;
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();

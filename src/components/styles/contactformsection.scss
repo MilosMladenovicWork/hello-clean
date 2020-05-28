@@ -1,0 +1,76 @@
+@import './utils/media-breakpoints.scss';
+
+.contactform-section{
+  form{
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:auto;
+    margin-bottom:40px;
+    @media (max-width:$breakpoint-mobile){
+      width:100%;
+    }
+    >div{
+      display:flex;
+      width:100%;
+      justify-content: space-between;
+      margin-bottom:20px;
+      >div{
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+      }
+      .inputs{
+        align-items: center;
+        margin-bottom:20px;
+      }
+      @media (max-width:$breakpoint-tablet){
+        flex-direction: column;
+      }
+    }
+    input, textarea{
+      width:100%;
+      margin-left:10px;
+      margin-right:20px;
+      border:1px solid #23395b;
+      border-radius: 6px;
+      padding:10px 5px;
+    }
+    textarea{
+      min-height: 300px;
+      resize: vertical;
+    }
+    p{
+      margin:auto;
+      text-align: center;
+      &.success{
+        color:green;
+      }
+      &.error{
+        color:red;
+      }
+    }
+    button{
+      align-self: flex-end;
+      margin-right:20px;
+      border-radius: 6px;
+      border:2px solid #23395b;
+      padding:15px 30px;
+      transition:0.3s;
+      display: inline-block;
+      margin-bottom:25px;
+      text-transform: uppercase;
+      background-color: white;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: #fb8723;
+      border-color:#fb8723;
+      color:white;
+    }
+  }
+  form.hidden{
+    display:none;
+  }
+}

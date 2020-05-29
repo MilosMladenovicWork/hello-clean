@@ -41,7 +41,7 @@ function Detailssection(){
     <section className='details-section'>
       <div className='details-item'>
         <div className='details-image'>
-          <Img fluid={data.rowMainImages.edges[0].node.childImageSharp.fluid} />
+          <Img fluid={data.rowMainImages.edges[0].node.childImageSharp.fluid} imgStyle={{objectFit:"cover"}}/>
         </div>
         <div className='details-text'>
           <h2>Low-Maintenance through Smart Technology</h2>

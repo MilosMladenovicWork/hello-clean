@@ -48,7 +48,6 @@ export default class MyForm extends React.Component {
 
   submitForm(ev) {
     ev.preventDefault();
-    this.setState({ status: "ERROR" });
     const form = ev.target;
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();

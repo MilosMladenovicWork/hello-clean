@@ -3,7 +3,7 @@ import React from "react"
 
 import './styles/header.scss'
 
-import logo from '../images/logo-blue_195x.webp'
+import logo from '../images/logo.png'
 import menuImg from '../images/menu-24px.svg'
 import closeMenuImg from '../images/close-24px.svg'
 
@@ -15,7 +15,7 @@ function Header({mobileMenuClick, menuClicked }){
     >
       <div>
         <Link to="/">
-          <img src={logo} alt='hello clean logo'/>
+          <img style={{height:50}} src={logo} alt='hello clean logo'/>
         </Link>
         <nav>
           <Link to="#">

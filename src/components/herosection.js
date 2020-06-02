@@ -10,7 +10,7 @@ function Herosection({menuClicked}){
   
   const data = useStaticQuery(graphql`
   query {
-    heroImg:file(relativePath:{eq:"test.png"}){
+    heroImg:file(relativePath:{eq:"test.jpg"}){
       childImageSharp{
         fluid(maxWidth:1000){
           ...GatsbyImageSharpFluid

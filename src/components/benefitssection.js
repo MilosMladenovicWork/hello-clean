@@ -8,28 +8,28 @@ import './styles/benefitssection.scss'
 const benefitsArr = [
   {
     img:'https://via.placeholder.com/44',
-    heading:"Auto-alert",
-    paragraph:'Smart IOT technology monitors refill consumption and battery life and auto-requests refills'
+    heading:"Smart aplikacja",
+    paragraph:'Zapewniamy możliwość zdalnego zarządzania każdym aplikatorem. Aplikacja pozwala na podgląd statusu urządzenia, stanu baterii/wkładu z płynem.'
   },{
     img:'https://via.placeholder.com/44',
-    heading:"Auto-alert",
-    paragraph:'Smart IOT technology monitors refill consumption and battery life and auto-requests refills'
+    heading:"Intuicyjne i bezdotykowe ",
+    paragraph:'Urządzenia działają w pełni automatycznie. Wystarczy zbliżyć dłonie, a aplikator samodzielnie spryska je płynem dezynfekującym.'
   },{
     img:'https://via.placeholder.com/44',
-    heading:"Auto-alert",
-    paragraph:'Smart IOT technology monitors refill consumption and battery life and auto-requests refills'
+    heading:"Oszczędność środka dezynfekującego",
+    paragraph:'Jeden wkład wystarcza na utrzymanie higieny w całej firmie przez kilka miesięcy. '
   },{
     img:'https://via.placeholder.com/44',
-    heading:"Auto-alert",
-    paragraph:'Smart IOT technology monitors refill consumption and battery life and auto-requests refills'
+    heading:"Trwała i solidna konstrukcja ",
+    paragraph:'Wszystkie urządzenia wykonane z solidnych korpusów metalowych. Produkty przeznaczone są do użytku wewnętrznego i zewnętrznego.'
   },{
     img:'https://via.placeholder.com/44',
-    heading:"Auto-alert",
-    paragraph:'Smart IOT technology monitors refill consumption and battery life and auto-requests refills'
+    heading:"Bezobsługowość",
+    paragraph:'Obsługa i konserwacja urządzenia nie wymaga specjalistycznej wiedzy. Wystarczy wymienić płyn, o czym informuje wcześniej aplikacja.'
   },{
     img:'https://via.placeholder.com/44',
-    heading:"Auto-alert",
-    paragraph:'Smart IOT technology monitors refill consumption and battery life and auto-requests refills'
+    heading:"Produkt polski",
+    paragraph:'Aplikator został zaprojektowany i jest produkowany wyłącznie na terenie Polski, tak jak większość komponentów oraz materiałów niezbędna do jego produkcji.'
   },
 ]
 
@@ -57,7 +57,7 @@ function Benefitssection({menuClicked}){
   return(
     <section className={`benefits-section ${menuClicked && 'mobile-menu-active'}`}>
       <div>
-        <h2>Discover the benefits</h2>
+        <h2>Czym wyróżniają się nasze produkty?</h2>
         <div
           className='benefits-group'
         >

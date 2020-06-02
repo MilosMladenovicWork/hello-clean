@@ -12,7 +12,7 @@ function Herosection({menuClicked}){
   query {
     heroImg:file(relativePath:{eq:"test.jpg"}){
       childImageSharp{
-        fluid(maxWidth:1000){
+        fluid(maxWidth:1920){
           ...GatsbyImageSharpFluid
         }
       }
@@ -23,37 +23,43 @@ function Herosection({menuClicked}){
   return(
     <section className={`hero-section ${menuClicked && 'mobile-menu-active'}`}>
       <div className='hero-main-content'>
-        <div className='hero-text-container'>
-          <h1>Introducing <br/>
-              KUB & KUB Premium
-          </h1>
-          <p>
-          Enabling healthier environments with a cost-effective, <br/>
-          smart & beautifully designed commercial solution <br/>
-          <Link to='#'>
-            Get yours
-          </Link>
-          </p>
-        </div>
-        <div className='hero-image-position-container'>
-          <div className='hero-image-container'>
-            <Img 
-              fluid={data.heroImg.childImageSharp.fluid} 
-              style={{
-                overflow:'hidden'
-              }}
-            /> 
-            {/* <img src={'https://via.placeholder.com/300'}/> */}
+          <div className='hero-text-container'>
+            <h1>Aplikatory w wariancie Premium
+            </h1>
+            <p>
+            Świeżość, higiena i pełen komfort w kilka chwil!<br/>
+            Sprawdź jak łatwo można zadbać o czystość dłoni i nie tylko.<br/>
+            <Link to='#'>
+              SKONTAKTUJ SIĘ
+            </Link>
+            </p>
+          </div>
+          <div className='hero-image-position-container'>
+            <div className='hero-image-container'>
+              <Img 
+                fluid={data.heroImg.childImageSharp.fluid} 
+                style={{
+                  overflow:'hidden',
+                  height:'100%'
+                }}
+                imgStyle={{
+                  objectFit:'cover',
+                  width:'100%',
+                  height:'100%',
+                  objectPosition:'70%'
+                }}
+              /> 
+              {/* <img src={'https://via.placeholder.com/300'}/> */}
+            </div>
           </div>
         </div>
-      </div>
-      <div className='hero-mobile-content-container'>
-        <p className='centered mobile'>
-          Enabling healthier environments with a cost-effective, smart & beautifully designed commercial solution<br/>
-          <Link to='#'>
-            Get yours
-          </Link>
-        </p>
+        <div className='hero-mobile-content-container'>
+          <p className='centered mobile'>
+            Enabling healthier environments with a cost-effective, smart & beautifully designed commercial solution<br/>
+            <Link to='#'>
+              Get yours
+            </Link>
+          </p>
       </div>
     </section>
   )

@@ -19,10 +19,10 @@ function Header({mobileMenuClick, menuClicked }){
         </Link>
         <nav>
           <Link to="#">
-            About
+            Oferta
           </Link>
           <Link to="#">
-            Contact
+            Kontakt
           </Link>
         </nav>
         <button className='mobile' onClick={() => mobileMenuClick()}>

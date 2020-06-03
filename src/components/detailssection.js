@@ -44,19 +44,19 @@ function Detailssection(){
           <Img fluid={data.rowMainImages.edges[0].node.childImageSharp.fluid} imgStyle={{objectFit:"cover"}}/>
         </div>
         <div className='details-text'>
-          <h2>Low-Maintenance through Smart Technology</h2>
+          <h2>Zarządzaj każdym aplikatorem z poziomu aplikacji mobilnej!</h2>
           <ul>
             <li>
-            Each Kub or Kub Premium self-monitors for needed refills and battery life; communicating directly with Touchland HQ.
+            Większość urządzeń dostępnych w naszej ofercie posiada możliwość obsługi zdalnej. Powoduje to, że każdym z osobna można zarządzać z dowolnego miejsca. Zapewnia to niezwykłą oszczędność czasu, gdyż wszystko możesz zrobić nie wstając z fotela. Kiedy chcesz możesz sprawdzić stan zapełnienia pojemnika oraz naładowania baterii.
             </li>
             <li>
-            Each Kub or Kub Premium self-monitors for needed refills and battery life; communicating directly with Touchland HQ.
+            Ponadto nie musisz martwić się zakupem kolejnych wkładów. Wystarczy, że klikniesz odpowiedni przycisk z poziomu menu głównego. Centrala otrzymuje zgłoszenie i ciągu 1-2 dni, wkład zostaje dostarczony kurierem.
             </li>
             <li>
-            Each Kub or Kub Premium self-monitors for needed refills and battery life; communicating directly with Touchland HQ.
+            Niezbędne jest jedynie własnoręczne montowanie nowych wkładów. Nasze dozowniki wyliczają w tym kontekście idealną proporcję płynu, który zabija do 100% bakterii przy jak największej oszczędności środka dezynfekującego. W efekcie wymiana w zależności od wielkości Twojej firmy będzie konieczna częściej niż raz na co najmniej miesiąc.
             </li>
             <li>
-            Each Kub or Kub Premium self-monitors for needed refills and battery life; communicating directly with Touchland HQ.
+            Aplikacja pozwala zarządzać każdym urządzeniem, które zakupisz. W głównym panelu znajduje się się lista aplikatorów łącznie z nazwą modelu, jego lokalizacją, stanem baterii  oraz procentowym napełnianieniem wkładu. Możesz kontrolować każde z urządzeń z osobna i sprawdzać jego dokładne statystyki. System posiada rozbudowaną funkcję powiadomień, który poinformuje Cię m.in.  o konieczności napełnienia wkładu, jeśli jego stan zejdzie poniżej 10%.
             </li>
           </ul>
           <p className='bold centered'>Coming Soon</p>

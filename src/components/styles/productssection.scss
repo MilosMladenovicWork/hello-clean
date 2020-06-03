@@ -15,6 +15,8 @@ section.products-section{
     flex-direction: column;
     align-items: center;
     padding-bottom:70px;
+    padding-left:60px;
+    padding-right: 60px;
     @media (max-width:$breakpoint-tablet){
       width:100%;
     }

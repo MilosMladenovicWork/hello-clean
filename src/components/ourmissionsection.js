@@ -8,7 +8,7 @@ import './styles/ourmissionsection.scss'
 function Ourmissionsection({menuClicked}){
 
   return(
-    <section className={`ourmission-section ${menuClicked && 'mobile-menu-active'}`}>
+    <section className={`ourmission-section ${menuClicked && 'mobile-menu-active'}`} id='about'>
       <div>
         <h2>Nasza misja</h2>
           <div className='testimonial'>

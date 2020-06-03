@@ -29,7 +29,7 @@ function Herosection({menuClicked}){
             <p>
             Świeżość, higiena i pełen komfort w kilka chwil!<br/>
             Sprawdź jak łatwo można zadbać o czystość dłoni i nie tylko.<br/>
-            <Link to='#'>
+            <Link to='#contact'>
               SKONTAKTUJ SIĘ
             </Link>
             </p>

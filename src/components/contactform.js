@@ -14,7 +14,7 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <section className='contactform-section'>
+      <section className='contactform-section' id='contact'>
         <div>
           <h2>Skontaktuj się z nami!</h2>
           <p>Poszukujesz sprawdzonych rozwiązań? Doskonale!</p>

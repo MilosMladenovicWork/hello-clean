@@ -80,7 +80,7 @@ function Detailssection(){
             </li>
           </ul>
           <div className='centered'>
-            <Link to='#'>
+            <Link to='#contact'>
               Get yours
             </Link>
           </div>
@@ -106,7 +106,7 @@ function Detailssection(){
             <p>Każde z naszych urządzeń zostało wyposażone w inteligentny system oszczędnego dozowania płynu. Zapewniamy bardzo niskie zużycie przy zachowaniu efektywności w usuwaniu bakterii. Jeśli stan pojemnika zejdzie poniżej minimum, zostaniesz o Tym powiadomiony z poziomu aplikacji mobilnej. Wystarczy jedno kliknięcie, aby zamówić zapasowy wkład.  </p>
             <p>Wymiana jest prosta i zajmuje kilka chwil. Wymaga to zaledwie czterech czynności, otwarcia urządzenia, wyciągnięcia zużytego wkładu, włożenia nowego i zamknięcia.</p>
             <div className='centered'>
-              <Link to='#'>
+              <Link to='#contact'>
                 Shop Now
               </Link>
             </div>

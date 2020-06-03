@@ -49,14 +49,13 @@ function Herosection({menuClicked}){
                   objectPosition:'70%'
                 }}
               /> 
-              {/* <img src={'https://via.placeholder.com/300'}/> */}
             </div>
           </div>
         </div>
         <div className='hero-mobile-content-container'>
           <p className='centered mobile'>
             Enabling healthier environments with a cost-effective, smart & beautifully designed commercial solution<br/>
-            <Link to='#'>
+            <Link to='#contact'>
               Get yours
             </Link>
           </p>

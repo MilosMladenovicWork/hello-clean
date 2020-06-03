@@ -38,7 +38,7 @@ function Productssection({menuClicked}){
           <p>Możliwość montażu zewnętrznego,</p>
           <p>Wytrzymała konstrukcja.</p>
         </div>
-        <Link to='#'>SHOP NOW</Link>
+        <Link to='#'>Czytaj więcej...</Link>
       </div>   
       <div className='product'>
       <Img fixed={data.allFile.edges[1].node.childImageSharp.fixed}/>
@@ -54,7 +54,7 @@ function Productssection({menuClicked}){
           <p>Możliwość zewnętrznego i wewnętrznego montażu, </p>
           <p>Bezdotykowy system aplikacji.</p>
         </div>
-        <Link to='#'>SHOP NOW</Link>
+        <Link to='#'>Czytaj więcej...</Link>
       </div>  
       <div className='product'>
       <Img fixed={data.allFile.edges[2].node.childImageSharp.fixed}/>
@@ -72,7 +72,7 @@ function Productssection({menuClicked}){
           <p>Wkład o dużej pojemności z inteligentnym dozownikiem,</p>
           <p>Bezdotykowy system aplikacji.</p>
         </div>
-        <Link to='#'>SHOP NOW</Link>
+        <Link to='#'>Czytaj więcej...</Link>
       </div>   
       <div className='product'>
       <Img fixed={data.allFile.edges[3].node.childImageSharp.fixed}/>
@@ -93,7 +93,7 @@ function Productssection({menuClicked}){
           <p>Wbudowany akumulator,</p>
           <p>Bezdotykowy system aplikacji. </p>
         </div>
-        <Link to='#'>SHOP NOW</Link>
+        <Link to='#'>Czytaj więcej...</Link>
       </div>     
     </section>
   )

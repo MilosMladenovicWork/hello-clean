@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 
 import './styles/footer.scss'
 
@@ -10,21 +9,13 @@ function Footer(){
         <hr/>
         <div className='footer-content'>
           <p>
-            © touchland ® All rights reserved. {new Date().getFullYear()}.
+            © {new Date().getFullYear()} by Hello Clean
           </p>
           <div className='additional-links'>
-            <Link to='#'>
-              Terms of use
-            </Link>
-            <Link to='#'>
-              Privacy policy
-            </Link>
-            <Link to='#'>
-              Returns & Shipping
-            </Link>
-            <Link to='#'>
-              Help & faq
-            </Link>
+            Realizacja -
+            <a href='https://karermedia.pl/'>
+              Karer Media
+            </a>
           </div>
         </div>
       </div>

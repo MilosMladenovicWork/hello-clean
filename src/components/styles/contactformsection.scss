@@ -1,6 +1,12 @@
 @import './utils/media-breakpoints.scss';
 
 .contactform-section{
+  p{
+    width:80%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
   form{
     width:60%;
     display:flex;
@@ -8,6 +14,7 @@
     align-items: flex-start;
     margin:auto;
     margin-bottom:40px;
+    margin-top:40px;
     @media (max-width:$breakpoint-mobile){
       width:100%;
     }

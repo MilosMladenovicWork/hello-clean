@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hello Clean - aplikatory dezynfekujące w wariancie premium`,
+    description: `Świeżość, higiena i pełen komfort w kilka chwil! Sprawdź jak łatwo można zadbać o czystość dłoni i nie tylko.`,
+    author: `Karer Media`,
   },
   plugins: [
     `gatsby-plugin-sass`,

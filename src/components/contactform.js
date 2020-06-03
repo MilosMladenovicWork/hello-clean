@@ -16,7 +16,9 @@ export default class MyForm extends React.Component {
     return (
       <section className='contactform-section'>
         <div>
-          <h2>Contact Us</h2>
+          <h2>Skontaktuj się z nami!</h2>
+          <p>Poszukujesz sprawdzonych rozwiązań? Doskonale!</p>
+          <p>Zadzwoń lub opisz nam swoje potrzeby w formularzu kontaktowym! Pamiętaj, że wysyłając koncepty projektowe lub preferencje zamówienia zgadzasz się na przetwarzanie danych osobowych!</p>
           <form
             onSubmit={this.submitForm}
             action="https://formspree.io/xeqraprg"
@@ -24,17 +26,17 @@ export default class MyForm extends React.Component {
           >
             <div className={status === "SUCCESS" ? 'hidden' : 'shown'}>
               <div className='inputs'>
-                <label for='name'>Name:</label>
+                <label for='name'>Imię:</label>
                 <input type='text' name='name' id='name'></input>
               </div>
               <div className='inputs'>
-                <label for='email'>Email:</label>
+                <label for='email'>E&#8209;mail:</label>
                 <input type="email" name="email" id='email'/>
               </div>
             </div>
             <div className={status === "SUCCESS" ? 'hidden' : 'shown'}>
               <div>
-                <label form='message'>Message:</label>
+                <label form='message'>Wiadomość:</label>
                 <textarea name="message" id='message'></textarea>
               </div>
             </div>

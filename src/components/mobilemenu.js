@@ -19,7 +19,7 @@ function Mobilemenu({clicked, mobileMenuClick}){
           textDecoration: `none`,
         }}
       >
-        About
+        Oferta
       </Link>
       <Link
         onClick={() => mobileMenuClick()}
@@ -29,7 +29,7 @@ function Mobilemenu({clicked, mobileMenuClick}){
           textDecoration: `none`,
         }}
       >
-        Contact
+        Kontakt
       </Link>
     </nav>
   )

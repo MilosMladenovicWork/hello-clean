@@ -8,6 +8,7 @@ section.products-section{
     flex-direction:column;
   }
   .product{
+    background:rgb(248,248,248);
     max-width: unset;
     margin:unset;
     width:50%;
@@ -21,7 +22,7 @@ section.products-section{
       width:100%;
     }
     h2{
-      margin:0 0 40px;
+      margin:25px 0 40px;
     }
     p{
       margin:0 0 25px;
@@ -53,7 +54,7 @@ section.products-section{
     }
   }
   .product:last-child{
-    background-color:#292827;
+    background-color:rgb(18,18,18);
     *{
       color:white
     }

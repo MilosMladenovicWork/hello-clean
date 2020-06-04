@@ -51,7 +51,7 @@ function Detailssection(){
             Aplikacja pozwala zarządzać każdym urządzeniem, które zakupisz. W głównym panelu znajduje się się lista aplikatorów łącznie z nazwą modelu, jego lokalizacją, stanem baterii  oraz procentowym napełnianieniem wkładu. Możesz kontrolować każde z urządzeń z osobna i sprawdzać jego dokładne statystyki. System posiada rozbudowaną funkcję powiadomień, który poinformuje Cię m.in.  o konieczności napełnienia wkładu, jeśli jego stan zejdzie poniżej 10%.
             </li>
           </ul>
-          <p className='bold centered'>Coming Soon</p>
+          <p className='bold centered'>Już wkrótce...</p>
         </div>
       </div>
       <div className='details-item'>
@@ -71,11 +71,7 @@ function Detailssection(){
             Każdy z aplikatorów posiada wytrzymały korpus, który osłania komponenty wewnętrzne przed czynnikami atmosferycznymi i uszkodzeniami mechanicznymi. Proponowany przez naszą firmę bezdotykowy punkt dezynfekcji charakteryzuje się wysoką jakością wykonania i atrakcyjnym wyglądem. Nasze urządzenia to inwestycja na lata. 
             </li>
           </ul>
-          <div className='centered'>
-            <Link to='#contact'>
-              Get yours
-            </Link>
-          </div>
+          <br/>
         </div>
         <div className='details-image'>
           <Img 
@@ -103,11 +99,6 @@ function Detailssection(){
             <h2>Ekonomiczne wkłady i kasety z płynem </h2>
             <p>Każde z naszych urządzeń zostało wyposażone w inteligentny system oszczędnego dozowania płynu. Zapewniamy bardzo niskie zużycie przy zachowaniu efektywności w usuwaniu bakterii. Jeśli stan pojemnika zejdzie poniżej minimum, zostaniesz o Tym powiadomiony z poziomu aplikacji mobilnej. Wystarczy jedno kliknięcie, aby zamówić zapasowy wkład.  </p>
             <p>Wymiana jest prosta i zajmuje kilka chwil. Wymaga to zaledwie czterech czynności, otwarcia urządzenia, wyciągnięcia zużytego wkładu, włożenia nowego i zamknięcia.</p>
-            <div className='centered'>
-              <Link to='#contact'>
-                Shop Now
-              </Link>
-            </div>
           </div>
         </div>
       </div>

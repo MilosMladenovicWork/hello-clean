@@ -31,10 +31,7 @@
   display:initial;
 }
 .shrinked{
-  > p:not(:first-of-type){
-    display:none;
-  }
-  .minor-info{
+  > p{
     display:none;
   }
 }

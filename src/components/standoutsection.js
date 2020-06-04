@@ -24,7 +24,10 @@ function Standoutsection(){
         <h2>Dostosuj każde z urządzeń do swoich potrzeb</h2>
         <p>Zapewniamy możliwość dowolnej customizacji aplikatorów do indywidualnych preferencji klienta. Możemy dowolnie dostosowywać sprzęt do Twojej wizji. Każdy z aplikatorów może zostać wykonany z logo i w kolorystyce Twojej firmy. Wystarczy, że skontaktujesz się z nami i przedstawisz nam swój pomysł. </p>
         <p>Dopasujemy Twoją koncepcję do naszego sprzętu. Dzięki temu możesz zakupić zestaw aplikatorów, które będą dbać o higienę pracowników, a zarazem promować Twoje produkty lub usługi. </p>
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Img 
+          fluid={data.file.childImageSharp.fluid} 
+          alt='comapnies using our products'
+        />
       </div>
     </section>
   )

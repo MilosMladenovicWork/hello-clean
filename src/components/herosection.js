@@ -13,7 +13,7 @@ function Herosection({menuClicked}){
     heroImg:file(relativePath:{eq:"test.jpg"}){
       childImageSharp{
         fluid(maxWidth:1920){
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -48,6 +48,7 @@ function Herosection({menuClicked}){
                   height:'100%',
                   objectPosition:'70%'
                 }}
+                alt={'our two products'}
               /> 
             </div>
           </div>

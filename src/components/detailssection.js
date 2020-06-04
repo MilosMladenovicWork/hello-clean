@@ -20,18 +20,6 @@ function Detailssection(){
         }
       }
     }
-    benefitsIcons:allFile(filter: {relativeDirectory:{eq:"details-images/second-row-icons"}}){
-      edges{
-        node{
-          name
-          childImageSharp{
-            fixed(width:44){
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    }
   }
   `)
 
@@ -41,7 +29,11 @@ function Detailssection(){
     <section className='details-section'>
       <div className='details-item'>
         <div className='details-image'>
-          <Img fluid={data.rowMainImages.edges[0].node.childImageSharp.fluid} imgStyle={{objectFit:"cover"}}/>
+          <Img 
+            fluid={data.rowMainImages.edges[0].node.childImageSharp.fluid} 
+            imgStyle={{objectFit:"cover"}}
+            alt='mobile application'
+          />
         </div>
         <div className='details-text'>
           <h2>Zarządzaj każdym aplikatorem z poziomu aplikacji mobilnej!</h2>
@@ -86,12 +78,18 @@ function Detailssection(){
           </div>
         </div>
         <div className='details-image'>
-          <Img fluid={data.rowMainImages.edges[1].node.childImageSharp.fluid} />
+          <Img 
+            fluid={data.rowMainImages.edges[1].node.childImageSharp.fluid} 
+            alt='product recharging'
+          />
         </div>
       </div>
       <div className='details-item'>
         <div className='details-image'>
-         <Img fluid={data.rowMainImages.edges[2].node.childImageSharp.fluid} />
+         <Img 
+          fluid={data.rowMainImages.edges[2].node.childImageSharp.fluid} 
+          alt='product'
+        />
         </div>
         <div className='details-text'>
           <div

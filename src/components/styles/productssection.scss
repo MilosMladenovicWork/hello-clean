@@ -8,6 +8,7 @@ section.products-section{
     flex-direction:column;
   }
   .product{
+    position: relative;
     background:rgb(248,248,248);
     max-width: unset;
     margin:unset;

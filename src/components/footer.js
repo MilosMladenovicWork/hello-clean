@@ -9,7 +9,7 @@ function Footer(){
         <hr/>
         <div className='footer-content'>
           <p>
-            © {new Date().getFullYear()} by Hello Clean
+            © {new Date().getFullYear()} Hello Clean. Wszelkie prawa zastrzeżone.
           </p>
           <div className='additional-links'>
             Realizacja -

@@ -40,8 +40,8 @@ export default class MyForm extends React.Component {
                 <textarea name="message" id='message'></textarea>
               </div>
             </div>
-            {status === "SUCCESS" ? <p className='success'>Thanks!</p> : <button type='submit' className={status === "SUCCESS" ? 'hidden' : 'shown'}>Submit</button>}
-            {status === "ERROR" && <p className='error'>Ooops! There was an error.</p>}
+            {status === "SUCCESS" ? <p className='success'>Dziękujemy! Wiadomość przesłana.</p> : <button type='submit' className={status === "SUCCESS" ? 'hidden' : 'shown'}>Prześlij wiadomość</button>}
+            {status === "ERROR" && <p className='error'>Wystąpił błąd, spróbuj ponownie lub napisz na info@helloclean.pl</p>}
           </form>
         </div>
       </section>

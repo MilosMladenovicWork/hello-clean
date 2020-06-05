@@ -8,19 +8,19 @@ import './styles/benefitssection.scss'
 const benefitsArr = [
   {
     heading:"Smart aplikacja",
-    paragraph:'Zapewniamy możliwość zdalnego zarządzania każdym aplikatorem. Aplikacja pozwala na podgląd statusu urządzenia, stanu baterii/wkładu z płynem.'
+    paragraph:'Możliwość zdalnego zarządzania każdym aplikatorem. Aplikacja pozwala na podgląd statusu i stanu baterii/wkładu z płynem.'
   },{
     heading:"Intuicyjne i bezdotykowe ",
-    paragraph:'Urządzenia działają w pełni automatycznie. Wystarczy zbliżyć dłonie, a aplikator samodzielnie spryska je płynem dezynfekującym.'
+    paragraph:'W pełni automatycznie działanie. Wystarczy zbliżyć dłonie, a aplikator samodzielnie spryska je płynem dezynfekującym.'
   },{
-    heading:"Oszczędność środka dezynfekującego",
+    heading:"Oszczędność wkładu",
     paragraph:'Jeden wkład wystarcza na utrzymanie higieny w całej firmie przez kilka miesięcy. '
   },{
     heading:"Trwała i solidna konstrukcja ",
-    paragraph:'Wszystkie urządzenia wykonane z solidnych korpusów metalowych. Produkty przeznaczone są do użytku wewnętrznego i zewnętrznego.'
+    paragraph:'Wykonanie z solidnych korpusów metalowych. Produkty przeznaczone są do użytku wewnętrznego i zewnętrznego.'
   },{
     heading:"Bezobsługowość",
-    paragraph:'Obsługa i konserwacja urządzenia nie wymaga specjalistycznej wiedzy. Wystarczy wymienić płyn, o czym informuje wcześniej aplikacja.'
+    paragraph:'Obsługa i konserwacja nie wymaga specjalistycznej wiedzy. Wystarczy wymienić płyn, o czym informuje wcześniej aplikacja.'
   },{
     heading:"Produkt polski",
     paragraph:'Aplikator został zaprojektowany i jest produkowany wyłącznie na terenie Polski, tak jak większość komponentów oraz materiałów niezbędna do jego produkcji.'

@@ -19,7 +19,7 @@ function Standoutsection(){
   `)
 
   return(
-    <section className='standout-section'>
+    <section id='customize' className='standout-section'>
       <div>
         <h2>Dostosuj każde z urządzeń do swoich potrzeb</h2>
         <p>Zapewniamy możliwość dowolnej customizacji aplikatorów do indywidualnych preferencji klienta. Możemy dowolnie dostosowywać sprzęt do Twojej wizji. Każdy z aplikatorów może zostać wykonany z logo i w kolorystyce Twojej firmy. Wystarczy, że skontaktujesz się z nami i przedstawisz nam swój pomysł. </p>

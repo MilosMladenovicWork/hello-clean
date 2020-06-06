@@ -18,8 +18,11 @@ function Header({mobileMenuClick, menuClicked }){
           <img style={{height:50}} src={logo} alt='hello clean logo'/>
         </Link>
         <nav>
-          <Link to="#about">
+          <Link to="#products">
             Oferta
+          </Link>
+          <Link to="#customize">
+            Customizacja
           </Link>
           <Link to="#contact">
             Kontakt

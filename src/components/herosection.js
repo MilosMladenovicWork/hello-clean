@@ -55,9 +55,10 @@ function Herosection({menuClicked}){
         </div>
         <div className='hero-mobile-content-container'>
           <p className='centered mobile'>
-            Enabling healthier environments with a cost-effective, smart & beautifully designed commercial solution<br/>
+            Świeżość, higiena i pełen komfort w kilka chwil!<br/>
+            Sprawdź jak łatwo można zadbać o czystość dłoni i nie tylko.<br/>
             <Link to='#contact'>
-              Get yours
+              SKONTAKTUJ SIĘ
             </Link>
           </p>
       </div>

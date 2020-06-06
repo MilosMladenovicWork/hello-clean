@@ -13,13 +13,23 @@ function Mobilemenu({clicked, mobileMenuClick}){
     >
       <Link
       onClick={() => mobileMenuClick()}
-        to="#about"
+        to="#products"
         style={{
           color:'#23395b',
           textDecoration: `none`,
         }}
       >
         Oferta
+      </Link>
+      <Link
+      onClick={() => mobileMenuClick()}
+        to="#customize"
+        style={{
+          color:'#23395b',
+          textDecoration: `none`,
+        }}
+      >
+        Customizacja
       </Link>
       <Link
         onClick={() => mobileMenuClick()}

@@ -28,7 +28,7 @@ function Productssection({menuClicked}){
   data.allFile.edges.sort((a, b) => Number(a.node.name) - Number(b.node.name))
 
   return(
-    <section className={`products-section ${menuClicked && 'mobile-menu-active'}`}>
+    <section id='products' className={`products-section ${menuClicked && 'mobile-menu-active'}`}>
       <Productwithreadmore>
         <Img 
           fixed={data.allFile.edges[0].node.childImageSharp.fixed}

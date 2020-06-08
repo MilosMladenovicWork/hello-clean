@@ -9,7 +9,7 @@ section.products-section{
   }
   .product{
     position: relative;
-    background:rgb(248,248,248);
+    background:rgb(218,218,218);
     max-width: unset;
     margin:unset;
     width:50%;
@@ -55,7 +55,7 @@ section.products-section{
     }
   }
   .product:last-child{
-    background-color:rgb(18,18,18);
+    background-color:rgb(16,16,16);
     *{
       color:white
     }

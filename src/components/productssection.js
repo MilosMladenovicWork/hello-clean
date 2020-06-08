@@ -15,7 +15,7 @@ function Productssection({menuClicked}){
         node{
           name
           childImageSharp{
-            fixed(width:300){
+            fixed(width:450){
               ...GatsbyImageSharpFixed
             }
           }

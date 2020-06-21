@@ -2,14 +2,13 @@ import React, {useState} from 'react'
 
 import './styles/productwithreadmore.scss'
 
-function Productwithreadmore({children}){
+function Productwithreadmore({children, render}){
   const [clicked, setClicked] = useState(false)
 
 
   return(
     <div className={`product ${clicked ? 'expanded' : 'shrinked'}`}>
-      {children}
-      <button onClick={() => setClicked((prevState) => !prevState)}>Czytaj więcej...</button>
+      {render(<button onClick={() => setClicked((prevState) => !prevState)}>Czytaj więcej...</button>)}
     </div>
   )
 }

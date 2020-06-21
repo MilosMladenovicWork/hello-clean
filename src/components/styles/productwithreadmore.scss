@@ -8,11 +8,11 @@
 
 .product{
   button{
-    position: absolute;
     bottom: 25px;
     border:2px solid #23395b;
     font-size:1.125rem;
-    display:inline-block;
+    display:block;
+    margin:auto;
     padding:15px 45px;
     color:white;
     font-weight: normal;
